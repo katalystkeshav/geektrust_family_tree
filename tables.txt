@@ -1,0 +1,28 @@
+CREATE TABLE family (
+    Id int primary key,
+    Name varchar(20),
+    Gender char,
+    Generation int,
+    Father varchar(20),
+    Mother varchar(20),
+    Partner varchar(20)
+);
+
+insert into family values (1, "King Shan", "M", 0, null, null, "Queen Anga");
+insert into family values (2, "Queen Anga", "F", 0, null, null, "King Shan");
+insert into family values (3, "Ish", "M", 1, "King Shan", "Queen Anga", null);
+insert into family values (4, "Chit", "M", 1, "King Shan", "Queen Anga", "Ambi");
+insert into family values (5, "Vich", "M", 1, "King Shan", "Queen Anga", "Lika");
+insert into family values (6, "Satya", "F", 1, "King Shan", "Queen Anga", "Vyan");
+insert into family values (7, "Drita", "M", 2, "Chit", "Ambi", "Jaya");
+insert into family values (8, "Vrita", "M", 2, "Chit", "Ambi", null);
+insert into family values (9, "Vila", "M", 2, "Vich", "Lika", "Jnki");
+insert into family values (10, "Chika", "F", 2, "Vich", "Lika", "Kpila");
+insert into family values (11, "Satvy", "F", 2, "Vyan", "Satya", "Asva");
+insert into family values (12, "Savya", "M", 2, "Vyan", "Satya", "Krpi");
+insert into family values (13, "Saayan", "M", 2, "Vyan", "Satya", "Mina");
+insert into family values (14, "Jata", "M", 3, "Drita", "Jaya", null);
+insert into family values (15, "Driya", "F", 3, "Drita", "Jaya", "Mnu");
+insert into family values (16, "Lavnya", "F", 3, "Vila", "Jnki", "Gru");
+insert into family values (17, "Kriya", "M", 3, "Savya", "Krpi", null);
+insert into family values (18, "Misa", "M", 3, "Savya", "Krpi", null);
